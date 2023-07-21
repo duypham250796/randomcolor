@@ -2,24 +2,24 @@ var button = document.getElementById("btn")
 
 
 // Sử dụng màu rgb
-// var changeBackGround = () => {
-//     var green = Math.floor(Math.random() * 256);
-//     var red = Math.floor(Math.random() * 256);
-//     var blue = Math.floor(Math.random() * 256);
+var changeBackGround = () => {
+    var green = Math.floor(Math.random() * 256);
+    var red = Math.floor(Math.random() * 256);
+    var blue = Math.floor(Math.random() * 256);
 
-//     var rgb = "rgb(" + red + ", " + green + ", " + blue + ")";
-//     console.log(rgb);
+    var rgb = "rgb(" + red + ", " + green + ", " + blue + ")";
+    console.log(rgb);
 
 
-//     var color = document.getElementsByClassName("color");
-//     color[0].innerHTML = rgb;
+    var color = document.getElementsByClassName("color");
+    color[0].innerHTML = rgb;
 
-//     var main = document.getElementsByTagName("main");
-//     main[0].style.backgroundColor = rgb;
-// }
+    var main = document.getElementsByTagName("main");
+    main[0].style.backgroundColor = rgb;
+}
 
 // Sử dụng tên màu 
-var changeBackGround = () => {
+var changeBackGroundName = () => {
     var colorNames = [
         "aliceblue", "antiquewhite", "aqua", "aquamarine", "azure", "beige", "bisque",
         "black", "blanchedalmond", "blue", "blueviolet", "brown", "burlywood", "cadetblue",
@@ -54,4 +54,5 @@ var changeBackGround = () => {
 
 
 }
-button.addEventListener("click", changeBackGround);
+
+button.addEventListener("click", changeBackGroundName);
